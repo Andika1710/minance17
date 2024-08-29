@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     screens: {
-      'xs': '375px',    // Extra small devices (phones)
-      'sm': '640px',    // Small devices (tablets)
-      'md': '768px',    // Medium devices (small laptops)
-      'lg': '1024px',   // Large devices (desktops)
+      'sm': '375px',    // Extra small devices (phones)
+      'md': '768px',    // Medium devices (tablet)
+      'lg': '1024px',   // Large devices (small desktops)
       'xl': '1280px',   // Extra large devices (large desktops)
       '2xl': '1440px',  // 2x Extra large devices (larger screens)
     },
