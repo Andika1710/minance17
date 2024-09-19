@@ -2,9 +2,23 @@
 export default {
   content: [
     "./index.html",
+    "./about.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        'bghero': "url('/HeroBg.jpg')",
+        'bgHero2': "url('/bg_1.png')",
+        'bgHero3': "url('/BgFlag.jpg')",
+        'bgHero4': "url('/BgFlag1.jpg')",
+        'bgHero5': "url('/BgBlack1.png')",
+      },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+      }
+
+    },
     screens: {
       'sm': '375px',    // Extra small devices (phones)
       'md': '768px',    // Medium devices (tablet)
@@ -22,6 +36,7 @@ export default {
         xl: '3rem',    // Padding for extra large screens
       },
     },
+    
   },
   plugins: [],
 }
